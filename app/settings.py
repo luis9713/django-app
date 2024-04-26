@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'academics.apps.AcademicsConfig',
+    'finance.apps.FinanceConfig',
     'corsheaders',
     'rest_framework',
 ]
@@ -59,7 +60,8 @@ ROOT_URLCONF = 'app.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'academics', 'templates')],
+        #'DIRS': [os.path.join(BASE_DIR,'academics', 'templates')],
+        'DIRS': [os.path.join(BASE_DIR,'finance', 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

@@ -8,4 +8,6 @@ urlpatterns = [
     
     path('list', views.list_users, name='list')
     
+    
+    
 ]
